@@ -1,4 +1,7 @@
 This repository is used to send otp on email, that can be used to verify email manually for firebase authentication.
+
+Full tutorial on -> https://youtu.be/Jdn1UBR54m4
+
 Dependencies used->
 
 In build.gradle(Module:app)-
@@ -18,7 +21,6 @@ dependencyResolutionManagement {
 I hope it would have helped you
 
 
-https://youtu.be/Jdn1UBR54m4
 
 
 
