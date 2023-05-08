@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "635499304227",
-    "project_id": "login-signup-using-otp",
-    "storage_bucket": "login-signup-using-otp.appspot.com"
+    "project_number": "420163698628",
+    "project_id": "loginsignupwithotp-ca903",
+    "storage_bucket": "loginsignupwithotp-ca903.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:635499304227:android:ade162ef26cd1174eea896",
+        "mobilesdk_app_id": "1:420163698628:android:39d420cf21a6fb5349ee91",
         "android_client_info": {
           "package_name": "com.japnoor.loginsignupwithotp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "635499304227-m1saq3hvo3bigo1jke1remubqpfb7otk.apps.googleusercontent.com",
+          "client_id": "420163698628-ug4asbs6bb986qmcmveegudmu9busah5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCb9TSfYABNWYMlqrUhSVNIw8YSLEgdABs"
+          "current_key": "AIzaSyD2ZQuFRWC5luY69t34Dx2Td2kda-d7b3k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "635499304227-m1saq3hvo3bigo1jke1remubqpfb7otk.apps.googleusercontent.com",
+              "client_id": "420163698628-ug4asbs6bb986qmcmveegudmu9busah5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

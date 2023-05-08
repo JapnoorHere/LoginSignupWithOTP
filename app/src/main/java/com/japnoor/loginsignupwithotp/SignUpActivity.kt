@@ -9,27 +9,23 @@ import com.japnoor.loginsignupwithotp.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var binding: ActivitySignUpBinding
-    lateinit var auth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        auth=FirebaseAuth.getInstance()
-
         binding.btnNext.setOnClickListener {
             if(binding.emailET.text.toString().isEmpty()){
-                binding.emailET.error="Enter Email"
+                binding.emailLayout.error="Enter Email"
             }
             else if(binding.passET.text.toString().isEmpty()){
-                binding.passET.error="Enter Password"
+                binding.passLayout.error="Enter Password"
             }
             else if(binding.confirmPassET.text.toString().isEmpty()){
-                binding.confirmPassET.error="Enter Password again"
+                binding.confirmPassLayout.error="Enter Password Again"
             }
             else if(!(binding.passET.text.toString().equals(binding.confirmPassET.text.toString()))){
-                Toast.makeText(this@SignUpActivity, "Password does not match", Toast.LENGTH_SHORT).show()
+                binding.confirmPassLayout.error="Password must be same"
             }
             else {
                 var intent=Intent(this@SignUpActivity,OtpActivity::class.java)
@@ -38,6 +34,7 @@ class SignUpActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
 
     }
 }

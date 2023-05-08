@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         auth=FirebaseAuth.getInstance()
 
 
@@ -25,26 +24,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.btnLogin.setOnClickListener{
+        binding.btnLogin.setOnClickListener {
             if(binding.emailET.text.toString().isEmpty()){
                 binding.emailLayout.error="Enter Email"
             }
             else if(binding.passET.text.toString().isEmpty()){
-                binding.passET.error="Enter Password"
+                binding.passLayout.error="Enter Password"
             }
-            else{
-                auth.signInWithEmailAndPassword(binding.emailET.text.toString(),binding.passET.text.toString())
-                    .addOnCompleteListener {task->
-                        if(task.isSuccessful){
-                            var intent=Intent(this@MainActivity,HomeScreen::class.java)
-                            startActivity(intent)
-                        }
-                        else{
-                            Toast.makeText(this@MainActivity, task.exception?.message.toString(), Toast.LENGTH_SHORT).show()
-                        }
+            else {
+                auth.signInWithEmailAndPassword(binding.emailET.text.toString(),binding.passET.text.toString()).addOnCompleteListener {
+                    if(it.isSuccessful){
+                        var intent=Intent(this@MainActivity,HomeScreen::class.java)
+                        startActivity(intent)
+                    }
                 }
             }
         }
+
 
     }
 }

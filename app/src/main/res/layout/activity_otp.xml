@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="13sp"
+        android:gravity="center"
         android:id="@+id/showEmail"
         android:layout_marginTop="20dp"
         android:textColor="#FFDD00"
