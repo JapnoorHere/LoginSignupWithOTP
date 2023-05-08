@@ -5,6 +5,7 @@ Full tutorial on -> https://youtu.be/Jdn1UBR54m4
 Dependencies used->
 
 In build.gradle(Module:app)-
+
 dependencies{
 
     implementation 'com.google.android.material:material:1.8.0'
@@ -14,6 +15,7 @@ dependencies{
 }
 
 In settings.gradle-
+
 dependencyResolutionManagement {
 
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
